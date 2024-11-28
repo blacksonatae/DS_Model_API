@@ -15,7 +15,7 @@ with open('model.pkl', 'rb') as file:
     model = pickle.load(file)
 
 # Endpoint untuk memprediksi diabetes
-@app.router('/')
+@app.route('/')
 def index():
     return "Selamat Datang di API DS Model"
 
